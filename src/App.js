@@ -1,13 +1,13 @@
 import logo from "./logo.svg";
-import im from "./img.jpg";
 import "./App.css";
 
 function App() {
+  const url = process.env.PUBLIC_URL + "/img.jpg";
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <img src={im} className="App-logo" alt="logo" />
+        <img src={url} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
